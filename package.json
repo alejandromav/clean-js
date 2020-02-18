@@ -1,0 +1,23 @@
+{
+    "name": "clean-js",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "nyc --reporter=html mocha --require @babel/register",
+        "test:watch": "mocha --require @babel/register -w",
+        "lint": "eslint -c .eslintrc.yml src test"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/core": "^7.8.4",
+        "@babel/preset-env": "^7.8.4",
+        "@babel/register": "^7.8.3",
+        "chai": "^4.2.0",
+        "eslint": "^6.8.0",
+        "mocha": "^7.0.1",
+        "nyc": "^15.0.0"
+    }
+}
